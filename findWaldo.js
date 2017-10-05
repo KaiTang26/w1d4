@@ -4,7 +4,7 @@ function findWaldo (arr, fund){
 
     if(arr[i]==="Waldo"){
 
-      fund();
+      fund(i);
 
     }
 
@@ -12,9 +12,9 @@ function findWaldo (arr, fund){
 
 }
 
-function actionWhenFound(){
+function actionWhenFound(index){
 
-  console.log("Found him!")
+  console.log("Waldo at index "+index+" !")
 
 }
 
