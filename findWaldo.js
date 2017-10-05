@@ -1,16 +1,29 @@
 function findWaldo (arr, fund){
 
-  for(var i=0; i<arr.length; i++){
+  // for(var i=0; i<arr.length; i++){
 
-    if(arr[i]==="Waldo"){
+  //   if(arr[i]==="Waldo"){
 
-      fund(i);
+  //     fund(i);
+
+  //   }
+
+  // }
+
+  arr.forEach(function(ele,ind){
+
+    if(ele==="Waldo"){
+
+      fund(ind);
 
     }
 
-  }
+  })
 
 }
+
+
+
 
 function actionWhenFound(index){
 
